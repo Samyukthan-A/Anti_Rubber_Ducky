@@ -11,24 +11,14 @@ from email.mime.multipart import MIMEMultipart
 class ANTI_RUBBER(win32serviceutil.ServiceFramework):
     _svc_name_ = "ANTIRUBBER"
     _svc_display_name_ = "AR"
-
-    SENDER_EMAIL = "asamyukthan2@gmail.com"
-    RECEIVER_EMAIL = "asamyukthan@gmail.com"
-    EMAIL_PASSWORD = "ifqn qvwv kniq rghq"
+    
+    #email info
+    SENDER_EMAIL = "" 
+    RECEIVER_EMAIL = ""
+    EMAIL_PASSWORD = ""
 
     AUTHORIZED_HIDS = {
-        "0001:0201",
-        "05AC:024F",
-        "0BDA:8153",
-        "0C45:6725",
-        "0D62:3740",
-        "1532:0083",
-        "187C:0550",
-        "2109:0100",
-        "2109:0817",
-        "2109:2817",
-        "31B2:0011",
-        "8087:0029"
+        "0001:0201", #example
     }
 
     def __init__(self, args):
